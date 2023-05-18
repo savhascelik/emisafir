@@ -65,12 +65,12 @@ export default {
                 floors_id: this.$props.floor_id
             }, config)
                 .then((response) => {
-                    $toast.success("  Oda verileri getirildi")
+                    //$toast.success("  Oda verileri getirildi")
 
                     this.rooms=response.data.data
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

@@ -51,10 +51,10 @@ export default {
   mounted() {
     if(this.$store.state.loginState )
     {
-      $toast.success("Anasayfaya Hoş Geldiniz")
+      //$toast.success("Anasayfaya Hoş Geldiniz")
     }else
     {
-      $toast.warning("Giriş Yapmalısınız")
+      //$toast.warning("Giriş Yapmalısınız")
       ipcRenderer.send("login-required",true)
 
       this.$router.push({name:'login'})

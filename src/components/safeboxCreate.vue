@@ -124,12 +124,12 @@ export default {
 
                 }, config)
                 .then((response)=> {
-                $toast.success(response.data.data.safe_deposit_box_name + "  Kasası Başarılı Bir Şekilde Kaydedildi")
+                //$toast.success(response.data.data.safe_deposit_box_name + "  Kasası Başarılı Bir Şekilde Kaydedildi")
                 this.emitEvent()
 
                 })
                 .catch((error)=> {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 });
 

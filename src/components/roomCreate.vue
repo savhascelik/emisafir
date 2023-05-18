@@ -163,12 +163,12 @@ export default {
 
                 }, config)
                 .then((response)=> {
-                $toast.success(response.data.data.room_name + "  Odası Başarılı Bir Şekilde Kaydedildi")
+                //$toast.success(response.data.data.room_name + "  Odası Başarılı Bir Şekilde Kaydedildi")
                 this.emitEvent()
 
                 })
                 .catch((error)=> {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 });
 
@@ -183,12 +183,12 @@ export default {
                                 };
                         axios.get(this.$store.state.apiUrl+this.$store.state.getallblock, config)
                         .then((response)=> {
-                        $toast.success("  Blok Verisi Güncellendi")
+                        //$toast.success("  Blok Verisi Güncellendi")
                         this.blocks=response.data.data 
                         console.log( this.blocks)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                         alert(error)
                         }).finally(() => this.loading = false);
@@ -205,12 +205,12 @@ export default {
                             blocks_id:block_id
                         }, config)
                         .then((response)=> {
-                        $toast.success("  Kat Verisi Güncellendi")
+                        //$toast.success("  Kat Verisi Güncellendi")
                         this.floors=response.data.data 
                         console.log( this.floors)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                         alert(error)
                         }).finally(() => this.loading = false);

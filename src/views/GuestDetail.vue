@@ -65,11 +65,11 @@ export default {
   mounted() {
  /*   if(this.$store.state.loginState )
     {
-      $toast.success("Konuk Detay Bölümüne Hoş Geldiniz")
+      //$toast.success("Konuk Detay Bölümüne Hoş Geldiniz")
       this.$route.query.guest_id
     }else
     {
-      $toast.warning("Giriş Yapmalısınız")
+      //$toast.warning("Giriş Yapmalısınız")
       ipcRenderer.send("login-required",true)
 
       this.$router.push({name:'login'})

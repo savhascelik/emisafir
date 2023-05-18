@@ -57,10 +57,10 @@ export default {
   mounted() {
     if(this.$store.state.loginState )
     {
-      $toast.success("Konuklar Bölümüne Hoş Geldiniz")
+      //$toast.success("Konuklar Bölümüne Hoş Geldiniz")
     }else
     {
-      $toast.warning("Giriş Yapmalısınız")
+      //$toast.warning("Giriş Yapmalısınız")
       ipcRenderer.send("login-required",true)
 
       this.$router.push({name:'login'})

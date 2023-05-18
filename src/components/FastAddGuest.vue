@@ -267,7 +267,7 @@ export default {
                         };
                 axios.get(this.$store.state.apiUrl+this.$store.state.guestfastinfo, config)
                 .then((response)=> {
-                $toast.success("  Konuk tanım verileri getirildi")
+                //$toast.success("  Konuk tanım verileri getirildi")
                 this.genders=response.data.data.genders
                 this.currentstatus=response.data.data.currentstatus
                 this.bringinginstitution=response.data.data.bringinginstitution
@@ -276,7 +276,7 @@ export default {
 
                 })
                 .catch((error)=> {
-                $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                 console.log(error.data.message)
                 alert(error)
                 });
@@ -309,12 +309,12 @@ export default {
     
                     }, config)
                     .then((response)=> {
-                    $toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
+                    //$toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
                     this.emitEvent()
     
                     })
                     .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                     console.log(error)
                     });
     

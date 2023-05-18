@@ -749,7 +749,7 @@ export default {
                         };
                 axios.get(this.$store.state.apiUrl+this.$store.state.guestinfo, config)
                 .then((response)=> {
-                $toast.success("  Konuk tanım verileri getirildi")
+                //$toast.success("  Konuk tanım verileri getirildi")
                 this.queryinfo.rooms=response.data.data.rooms
                 this.queryinfo.genders=response.data.data.genders
                 this.queryinfo.cityes=response.data.data.cityes
@@ -764,7 +764,7 @@ export default {
 
                 })
                 .catch((error)=> {
-                $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 alert(error)
                 });
@@ -784,13 +784,13 @@ drops.value ? drops.value=false:drops.value=true;
                 };
                 await axios.get(this.$store.state.apiUrl + this.$store.state.apiAllGuest + '?page=' + pages, config)
                     .then((response) => {
-                        $toast.success("  Konuk Verisi Güncellendi")
+                        //$toast.success("  Konuk Verisi Güncellendi")
                         this.guests =  response.data.data.data
                 cleanguest.value = response.data.data.meta
                         console.log(cleanguest);
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                         console.log(error)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -813,12 +813,12 @@ drops.value ? drops.value=false:drops.value=true;
                 };
                 axios.get(this.$store.state.apiUrl + this.$store.state.apiAllRoom, config)
                     .then((response) => {
-                        $toast.success("  Oda Verisi Getirildi")
+                        //$toast.success("  Oda Verisi Getirildi")
                         this.rooms = response.data.data
                         console.log(this.rooms)
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
                         console.log(error.data.message)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -832,12 +832,12 @@ drops.value ? drops.value=false:drops.value=true;
                 rooms_id: this.input.room_id,
             }, config)
                 .then((response) => {
-                    $toast.success("  Konuk Verisi Güncellendi")
+                    //$toast.success("  Konuk Verisi Güncellendi")
                     this.guests = response.data.data.data
                     console.log(this.guests)
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
                     console.log(error.data.message)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -861,7 +861,7 @@ drops.value ? drops.value=false:drops.value=true;
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -870,7 +870,7 @@ drops.value ? drops.value=false:drops.value=true;
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -889,7 +889,7 @@ drops.value ? drops.value=false:drops.value=true;
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -898,7 +898,7 @@ drops.value ? drops.value=false:drops.value=true;
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -941,12 +941,12 @@ drops.value ? drops.value=false:drops.value=true;
 
             }, config)
                 .then((response) => {
-                    $toast.success("  Listeye Ekleme Başarılı")
+                    //$toast.success("  Listeye Ekleme Başarılı")
                     this.$refs.lastest.lastest()
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -966,12 +966,12 @@ drops.value ? drops.value=false:drops.value=true;
 
             }, config)
                 .then((response) => {
-                    $toast.warning("  Listeden Çıkarma Başarılı")
+                    //$toast.warning("  Listeden Çıkarma Başarılı")
                     this.$refs.lastest.lastest()
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -1012,13 +1012,13 @@ drops.value ? drops.value=false:drops.value=true;
 
             }, config)
                 .then((response) => {
-                    $toast.success("  Arama Başarılı")
+                    //$toast.success("  Arama Başarılı")
                     this.guests =  response.data.data.data
                 cleanguest.value = response.data.data.meta
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -1048,13 +1048,13 @@ drops.value ? drops.value=false:drops.value=true;
 
             }, config)
                 .then((response) => {
-                    $toast.success("  Arama Başarılı")
+                    //$toast.success("  Arama Başarılı")
                     this.guests =  response.data.data.data
                 cleanguest.value = response.data.data.meta
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -1083,7 +1083,7 @@ drops.value ? drops.value=false:drops.value=true;
 
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -1091,7 +1091,7 @@ drops.value ? drops.value=false:drops.value=true;
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

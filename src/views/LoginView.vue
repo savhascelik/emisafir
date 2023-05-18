@@ -151,7 +151,7 @@ export default {
 
                 })
                 .then((response)=> {
-                $toast.success("Başarılı!Oturum Açılıyor")
+                //$toast.success("Başarılı!Oturum Açılıyor")
                 /*router.push({name:'setting',
                 params: {
                 id: 1,
@@ -170,7 +170,7 @@ export default {
 
                 })
                 .catch((error)=> {
-                $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin")
+                //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin")
                 console.log(error)
                 });
 
@@ -181,7 +181,7 @@ export default {
             
         if(this.$store.state.loginState )
         {
-            $toast.success("Oturum Zaten Açık")
+            //$toast.success("Oturum Zaten Açık")
             this.$router.push({name:'home'})
         }else
         {

@@ -63,12 +63,12 @@ export default {
                 blocks_id: this.$props.block_id
             }, config)
                 .then((response) => {
-                    $toast.success("  Kat verileri getirildi")
+                    //$toast.success("  Kat verileri getirildi")
 
                     this.floors=response.data.data
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

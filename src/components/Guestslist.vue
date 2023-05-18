@@ -436,14 +436,14 @@ export default {
 
                 }, config)
                     .then((response) => {
-                        $toast.success("  Liste Verisi Güncellendi")
+                        //$toast.success("  Liste Verisi Güncellendi")
                         
                         this.list_guests =  response.data.data.data
 
                         console.log(this.list_guests)
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                         console.log(error)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -478,7 +478,7 @@ export default {
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -487,7 +487,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -506,7 +506,7 @@ export default {
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -515,7 +515,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -535,12 +535,12 @@ export default {
 
                 }, config)
                     .then((response) => {
-                        $toast.success("  Liste Kapatıldı")
+                        //$toast.success("  Liste Kapatıldı")
                         this.$router.push({ name: 'lists' });
 
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                         console.log(error)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -559,12 +559,12 @@ export default {
 
                 }, config)
                     .then((response) => {
-                        $toast.success("  Liste Kapatıldı")
+                        //$toast.success("  Liste Kapatıldı")
                         this.$router.push({ name: 'lists' });
 
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                         console.log(error)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -583,12 +583,12 @@ export default {
 
             }, config)
                 .then((response) => {
-                    $toast.success("  Listeye Ekleme Başarılı")
+                    //$toast.success("  Listeye Ekleme Başarılı")
                     this.fetchData()
 
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

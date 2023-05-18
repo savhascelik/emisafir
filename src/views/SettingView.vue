@@ -127,10 +127,10 @@ methods:{
 mounted() {
     if(this.$store.state.loginState )
     {
-      $toast.success("Ayarlar Sayfasına Hoş Geldiniz")
+      //$toast.success("Ayarlar Sayfasına Hoş Geldiniz")
     }else
     {
-      $toast.warning("Giriş Yapmalısınız")
+      //$toast.warning("Giriş Yapmalısınız")
 
       this.$router.push({name:'login'})
     }

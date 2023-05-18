@@ -555,7 +555,7 @@ export default {
                         };
                 axios.get(this.$store.state.apiUrl+this.$store.state.guestinfo, config)
                 .then((response)=> {
-                $toast.success("  Konuk tanım verileri getirildi")
+                //$toast.success("  Konuk tanım verileri getirildi")
                 this.rooms=response.data.data.rooms
                 this.genders=response.data.data.genders
                 this.cityes=response.data.data.cityes
@@ -570,7 +570,7 @@ export default {
 
                 })
                 .catch((error)=> {
-                $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 alert(error)
                 });
@@ -610,11 +610,11 @@ export default {
     
                     }, config)
                     .then((response)=> {
-                    $toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
+                    //$toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
     
                     })
                     .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                     console.log(error)
                     });
     
@@ -649,11 +649,11 @@ export default {
                 this.input.bringing_institution_id=response.data.data.data[0]["bringing_institution_id"];
                 this.input.profile_photo=response.data.data.data[0]["profile_photo"];
 
-                    $toast.success( "  Konuk Bilgileri Getirildi")
+                    //$toast.success( "  Konuk Bilgileri Getirildi")
     
                     })
                     .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                     console.log(error)
                     });
     
@@ -672,7 +672,7 @@ export default {
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -681,7 +681,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -700,7 +700,7 @@ export default {
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -709,7 +709,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

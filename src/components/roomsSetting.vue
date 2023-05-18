@@ -229,12 +229,12 @@ export default {
                                 };
                         axios.get(this.$store.state.apiUrl+this.$store.state.apiAllRoom, config)
                         .then((response)=> {
-                        $toast.success("  Oda Verisi Güncellendi")
+                        //$toast.success("  Oda Verisi Güncellendi")
                         this.rooms=response.data.data 
                         console.log(this.rooms)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                        alert(error)
                         }).finally(() => this.loading = false);
@@ -256,12 +256,12 @@ export default {
                             id:room_id
                         }, config)
                         .then((response)=> {
-                        $toast.success("  Oda Silindi")
+                        //$toast.success("  Oda Silindi")
                         this.floors=response.data.data 
                         console.log( this.floors)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                         alert(error)
                         }).finally(() => this.loading = false);

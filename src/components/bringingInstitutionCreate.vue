@@ -140,12 +140,12 @@ export default {
 
                 }, config)
                 .then((response)=> {
-                $toast.success(response.data.data.bringing_institution_name + "  Kurumu Başarılı Bir Şekilde Kaydedildi")
+                //$toast.success(response.data.data.bringing_institution_name + "  Kurumu Başarılı Bir Şekilde Kaydedildi")
                 this.emitEvent()
 
                 })
                 .catch((error)=> {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 });
 
@@ -167,7 +167,7 @@ export default {
 
                 })
                 .catch((error)=> {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                 console.log(error)
                 });
 

@@ -221,12 +221,12 @@ export default {
                             token:this.$store.state.token_origin,
                         },config)
                         .then((response)=> {
-                        $toast.success("  Liste Verisi Güncellendi")
+                        //$toast.success("  Liste Verisi Güncellendi")
                         this.lists=response.data.data 
                         console.log(this.lists)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                        alert(error)
                         }).finally(() => this.loading = false);
@@ -252,12 +252,12 @@ export default {
                             token:this.$store.state.token_origin,
                         },config)
                         .then((response)=> {
-                        $toast.success("  Liste Verisi Güncellendi")
+                        //$toast.success("  Liste Verisi Güncellendi")
                         this.lists=response.data.data 
                         console.log(this.lists)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                        alert(error)
                         }).finally(() => this.loading = false);
@@ -278,12 +278,12 @@ export default {
                             token:this.$store.state.token_origin,
                         },config)
                         .then((response)=> {
-                        $toast.success("  Liste Verisi Güncellendi")
+                        //$toast.success("  Liste Verisi Güncellendi")
                         this.lists=response.data.data 
                         console.log(this.lists)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                        alert(error)
                         }).finally(() => this.loading = false);
@@ -304,12 +304,12 @@ export default {
                             token:this.$store.state.token_origin,
                         },config)
                         .then((response)=> {
-                        $toast.success("  Liste Verisi Güncellendi")
+                        //$toast.success("  Liste Verisi Güncellendi")
                         this.lists=response.data.data 
                         console.log(this.lists)
                         })
                         .catch((error)=> {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
                         console.log(error.data.message)
                        alert(error)
                         }).finally(() => this.loading = false);

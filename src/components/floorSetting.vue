@@ -158,13 +158,13 @@ data(){
                     };
             axios.get(this.$store.state.apiUrl+this.$store.state.getallblock, config)
             .then((response)=> {
-            $toast.success("  Blok Verisi Güncellendi")
+            //$toast.success("  Blok Verisi Güncellendi")
             this.blocks=response.data.data
             this.addFloor(this.blocks)
             
             })
             .catch((error)=> {
-            $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
+            //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error.data.message)
             console.log(error.data.message)
             alert(error)
             }).finally(() => this.loading = false);
@@ -181,12 +181,12 @@ data(){
         
                         }, config)
                         .then((response)=> {
-                        $toast.success("  Kat/lar Başarılı Bir Şekilde Kaydedildi")
+                        //$toast.success("  Kat/lar Başarılı Bir Şekilde Kaydedildi")
                         this.$emit('rooms');
         
                         })
                         .catch((error)=> {
-                            $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
+                            //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: "+error)
                         console.log(error)
                         });
         

@@ -74,7 +74,7 @@ export default {
 
             axios.get(this.$store.state.apiUrl + this.$store.state.gettofloorsumpdf,  config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -83,7 +83,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -98,7 +98,7 @@ export default {
 
             axios.get(this.$store.state.apiUrl + this.$store.state.gotoCurrentStatus,  config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -107,7 +107,7 @@ export default {
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);

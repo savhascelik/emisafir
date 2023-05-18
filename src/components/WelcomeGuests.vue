@@ -386,13 +386,13 @@ drops.value ? drops.value=false:drops.value=true;
                 };
                 await axios.get(this.$store.state.apiUrl + this.$store.state.apiWelcomeGuest + '?page=' + pages, config)
                     .then((response) => {
-                        $toast.success("Yeni Kayıt  Konuk Verisi Güncellendi")
+                        //$toast.success("Yeni Kayıt  Konuk Verisi Güncellendi")
                         this.guests =  response.data.data.data
                 cleanguest.value = response.data.data.meta
                         console.log(cleanguest);
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                         console.log(error)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -415,12 +415,12 @@ drops.value ? drops.value=false:drops.value=true;
                 };
                 axios.get(this.$store.state.apiUrl + this.$store.state.apiAllRoom, config)
                     .then((response) => {
-                        $toast.success("  Oda Verisi Getirildi")
+                        //$toast.success("  Oda Verisi Getirildi")
                         this.rooms = response.data.data
                         console.log(this.rooms)
                     })
                     .catch((error) => {
-                        $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
+                        //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
                         console.log(error.data.message)
                         alert(error)
                     }).finally(() => this.loading = false);
@@ -434,12 +434,12 @@ drops.value ? drops.value=false:drops.value=true;
                 rooms_id: this.input.room_id,
             }, config)
                 .then((response) => {
-                    $toast.success("  Konuk Verisi Güncellendi")
+                    //$toast.success("  Konuk Verisi Güncellendi")
                     this.guests = response.data.data.data
                     console.log(this.guests)
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error.data.message)
                     console.log(error.data.message)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -463,7 +463,7 @@ drops.value ? drops.value=false:drops.value=true;
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -472,7 +472,7 @@ drops.value ? drops.value=false:drops.value=true;
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
@@ -491,7 +491,7 @@ drops.value ? drops.value=false:drops.value=true;
                 guest_id: id
             }, config)
                 .then((response) => {
-                    $toast.success("  pdf verisi Verisi getirildi")
+                    //$toast.success("  pdf verisi Verisi getirildi")
                     const downloadUrl = window.URL.createObjectURL(response.data)
 
                     // open pdf file on new tab
@@ -500,7 +500,7 @@ drops.value ? drops.value=false:drops.value=true;
                     // remove temp url
                 })
                 .catch((error) => {
-                    $toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
+                    //$toast.warning("Başarısız Lütfen Bilgileri Kontrol Edin: " + error)
                     console.log(error)
                     alert(error)
                 }).finally(() => this.loading = false);
