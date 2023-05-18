@@ -52,7 +52,7 @@ const logout = () => {
                             v-slot="{ href, navigate, isActive }"
                             >
                             <NavLink :active="isActive" :href="href" @click="navigate">
-                                Misafirler
+                                Konuklar
                                 </NavLink
                             >
                             </router-link>

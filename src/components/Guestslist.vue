@@ -65,11 +65,11 @@ import guestlistdetailmenu from '@/components/guestlistdetailmenu.vue';
         <div class="sm:flex sm:items-center sm:justify-between">
             <div>
                 <div class="flex items-center gap-x-3">
-                    <!--<h2 class="text-lg font-medium text-gray-800 dark:text-white">Misafir Sayısı</h2>
+                    <!--<h2 class="text-lg font-medium text-gray-800 dark:text-white">Konuk Sayısı</h2>
 
                     <span
                         class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240
-                        Misafir</span> -->
+                        Konuk</span> -->
                 </div>
                 
 
@@ -83,7 +83,7 @@ import guestlistdetailmenu from '@/components/guestlistdetailmenu.vue';
                 <router-link to="/fastaddguest" custom v-slot="{ href, navigate }">
                     <a :href="href" @click="navigate"
                         class="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
-                        <span>Hızlı Misafir Kaydı</span>
+                        <span>Hızlı Konuk Kaydı</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-5 h-5">
@@ -145,7 +145,7 @@ import guestlistdetailmenu from '@/components/guestlistdetailmenu.vue';
                     class="inline-flex overflow-hidden bg-white border divide-x rounded-lg dark:bg-gray-900 rtl:flex-row-reverse dark:border-gray-700 dark:divide-gray-700">
                     <button
                         class="px-5 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 bg-gray-100 sm:text-sm dark:bg-gray-800 dark:text-gray-300">
-                        Misafir
+                        Konuk
                     </button>
 
                     <button
@@ -188,7 +188,7 @@ import guestlistdetailmenu from '@/components/guestlistdetailmenu.vue';
                                         <th scope="col"
                                             class="py-3.5  text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                             <button class="flex items-center gap-x-3 focus:outline-none">
-                                                <span>Misafir Adı</span>
+                                                <span>Konuk Adı</span>
 
                                                 <svg class="h-3" viewBox="0 0 10 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">

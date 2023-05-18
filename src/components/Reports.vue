@@ -11,7 +11,7 @@
  
             <div class="text-left">
                 <div class="mb-1 text-xs">Mevcut Durum</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Mevcut misafir durumu </div>
+                <div class="-mt-1 font-sans text-sm font-semibold">Mevcut Konuk durumu </div>
             </div>
         </a>
         <a @click="gotoFloorSum()" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
@@ -20,7 +20,7 @@
           </svg>
           <div class="text-left" >
                 <div class="mb-1 text-xs">Kat Toplamları</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Kat misafir sayısı</div>
+                <div class="-mt-1 font-sans text-sm font-semibold">Kat Konuk sayısı</div>
             </div>
         </a>
         <a @click="develop()" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
@@ -31,7 +31,7 @@
 
           <div class="text-left">
                 <div class="mb-1 text-xs">Aile Listesi</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Kat misafir sayısı</div>
+                <div class="-mt-1 font-sans text-sm font-semibold">Kat Konuk sayısı</div>
             </div>
         </a>
 

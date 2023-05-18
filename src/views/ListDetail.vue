@@ -21,7 +21,7 @@ import Guestslist from '@/components/Guestslist.vue';
 <AppLayout title="Odalar">
       <template #header>
           <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-              Listeye Ait Misafirler
+              Listeye Ait Konuklar
           </h2>
 
 
@@ -57,7 +57,7 @@ export default {
   mounted() {
     if(this.$store.state.loginState )
     {
-      $toast.success("Misafirler Bölümüne Hoş Geldiniz")
+      $toast.success("Konuklar Bölümüne Hoş Geldiniz")
     }else
     {
       $toast.warning("Giriş Yapmalısınız")

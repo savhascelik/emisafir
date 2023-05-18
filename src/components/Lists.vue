@@ -11,9 +11,9 @@ import axios from 'axios';
 
             <div>
                 <div class="flex items-center gap-x-3">
-                    <h2 class="text-lg font-medium text-gray-800 dark:text-white">Misafir Sayısı</h2>
+                    <h2 class="text-lg font-medium text-gray-800 dark:text-white">Konuk Sayısı</h2>
     
-                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240 Misafir</span>
+                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240 Konuk</span>
                 </div>
     
             </div>
@@ -99,7 +99,7 @@ import axios from 'axios';
                                         Hakkında
                                     </th>
     
-                                    <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Misafir Sayısı</th>
+                                    <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Konuk Sayısı</th>
     
     
                                     <th scope="col" class="relative py-3.5 px-4">
@@ -137,7 +137,7 @@ import axios from 'axios';
         
 
                                         <button  @click="gotoguestlist(list.id,list.list_name)" class="ml-1 bg-transparent hover:bg-yellow-500 text-blue-700 font-semibold hover:text-white py-1 px-1 border border-blue-500 hover:border-transparent rounded">
-                                        Misafir Listesi
+                                        Konuk Listesi
                                         </button>
                                     </td>
                                 </tr>

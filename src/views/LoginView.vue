@@ -65,7 +65,7 @@ console.log(self)
 
         </template>
         <h1 class="mb-4 text-3xl font-extrabold dark:text-white md:text-5xl lg:text-6xl   text-blue-500   text-center ">
-                misafir
+                Konuk
             </h1>
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}

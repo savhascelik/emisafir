@@ -55,7 +55,7 @@ export default {
   mounted() {
     if(this.$store.state.loginState )
     {
-      $toast.success("Misafirler Bölümüne Hoş Geldiniz")
+      $toast.success("Konuklar Bölümüne Hoş Geldiniz")
     }else
     {
       $toast.warning("Giriş Yapmalısınız")

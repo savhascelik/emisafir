@@ -18,9 +18,9 @@ const addRooms = () => {
 
             <div>
                 <div class="flex items-center gap-x-3">
-                    <h2 class="text-lg font-medium text-gray-800 dark:text-white">Misafir Sayısı</h2>
+                    <h2 class="text-lg font-medium text-gray-800 dark:text-white">Konuk Sayısı</h2>
     
-                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240 Misafir</span>
+                    <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240 Konuk</span>
                 </div>
     
             </div>
@@ -100,7 +100,7 @@ const addRooms = () => {
                                         Hakkında
                                     </th>
     
-                                    <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Misafir Kapa./Kullan.</th>
+                                    <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Konuk Kapa./Kullan.</th>
     
                                     <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Doluluk Oranı</th>
     

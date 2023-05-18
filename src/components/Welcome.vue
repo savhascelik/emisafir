@@ -19,7 +19,7 @@ const addRooms = () => {
             <ApplicationLogo class="block h-12 w-auto" />
 
             <h1 class="mt-8 text-2xl font-medium text-gray-900">
-               "Misafir" Uygulamasına Hoş Geldiniz
+               "Konuk" Uygulamasına Hoş Geldiniz
             </h1>
 
             
@@ -32,7 +32,7 @@ const addRooms = () => {
                 v-slot="{ href,navigate }"
                 >
             <a :href="href"  @click="navigate" class="flex items-center justify-center px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
-            <span>Hızlı Misafir Kaydı</span>
+            <span>Hızlı Konuk Kaydı</span>
 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -66,20 +66,20 @@ const addRooms = () => {
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-4">
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-        <dt class="text-base leading-7 text-gray-600">Toplam Misafir</dt>
+        <dt class="text-base leading-7 text-gray-600">Toplam Konuk</dt>
         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">12 Kişi</dd>
       </div>
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-        <dt class="text-base leading-7 text-gray-600">Erkek Misafir</dt>
+        <dt class="text-base leading-7 text-gray-600">Erkek Konuk</dt>
         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">9</dd>
       </div>
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-        <dt class="text-base leading-7 text-gray-600">Kadın Misafir</dt>
+        <dt class="text-base leading-7 text-gray-600">Kadın Konuk</dt>
         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">3</dd>
       </div>
 
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-        <dt class="text-base leading-7 text-gray-600">Çocuk Misafir</dt>
+        <dt class="text-base leading-7 text-gray-600">Çocuk Konuk</dt>
         <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">0</dd>
       </div>
     </dl>

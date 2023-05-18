@@ -48,11 +48,11 @@ const addRooms = () => {
         <div class="sm:flex sm:items-center sm:justify-between">
             <div>
                 <div class="flex items-center gap-x-3">
-                    <!--<h2 class="text-lg font-medium text-gray-800 dark:text-white">Misafir Sayısı</h2>
+                    <!--<h2 class="text-lg font-medium text-gray-800 dark:text-white">Konuk Sayısı</h2>
 
                     <span
                         class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">240
-                        Misafir</span> -->
+                        Konuk</span> -->
                 </div>
                 
           <div class="flex justify-center mt-3">
@@ -85,7 +85,7 @@ const addRooms = () => {
                     class="inline-flex overflow-hidden bg-white border divide-x rounded-lg dark:bg-gray-900 rtl:flex-row-reverse dark:border-gray-700 dark:divide-gray-700">
                     <button
                         class="px-5 py-2 text-xs font-medium text-gray-600 transition-colors duration-200 bg-gray-100 sm:text-sm dark:bg-gray-800 dark:text-gray-300">
-                        Misafir
+                        Konuk
                     </button>
 
                     <button
@@ -126,7 +126,7 @@ const addRooms = () => {
                                         <th scope="col"
                                             class="py-3.5  text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                             <button class="flex items-center gap-x-3 focus:outline-none">
-                                                <span>Misafir Adı</span>
+                                                <span>Konuk Adı</span>
 
                                                 <svg class="h-3" viewBox="0 0 10 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -386,7 +386,7 @@ drops.value ? drops.value=false:drops.value=true;
                 };
                 await axios.get(this.$store.state.apiUrl + this.$store.state.apiWelcomeGuest + '?page=' + pages, config)
                     .then((response) => {
-                        $toast.success("Yeni Kayıt  Misafir Verisi Güncellendi")
+                        $toast.success("Yeni Kayıt  Konuk Verisi Güncellendi")
                         this.guests =  response.data.data.data
                 cleanguest.value = response.data.data.meta
                         console.log(cleanguest);
@@ -434,7 +434,7 @@ drops.value ? drops.value=false:drops.value=true;
                 rooms_id: this.input.room_id,
             }, config)
                 .then((response) => {
-                    $toast.success("  Misafir Verisi Güncellendi")
+                    $toast.success("  Konuk Verisi Güncellendi")
                     this.guests = response.data.data.data
                     console.log(this.guests)
                 })

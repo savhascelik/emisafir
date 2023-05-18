@@ -267,7 +267,7 @@ export default {
                         };
                 axios.get(this.$store.state.apiUrl+this.$store.state.guestfastinfo, config)
                 .then((response)=> {
-                $toast.success("  Misafir tanım verileri getirildi")
+                $toast.success("  Konuk tanım verileri getirildi")
                 this.genders=response.data.data.genders
                 this.currentstatus=response.data.data.currentstatus
                 this.bringinginstitution=response.data.data.bringinginstitution
@@ -309,7 +309,7 @@ export default {
     
                     }, config)
                     .then((response)=> {
-                    $toast.success(response.data.data.room_name + "  Misafir Başarılı Bir Şekilde Kaydedildi")
+                    $toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
                     this.emitEvent()
     
                     })

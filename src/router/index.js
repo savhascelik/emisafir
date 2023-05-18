@@ -59,7 +59,7 @@ let routess=[]
       id:6,
       path: '/addguest',
       name: 'addguest',
-      showname:'Misafir Ekle ',
+      showname:'Konuk Ekle ',
       component: () => import(/* webpackChunkName: "Setting" */ '../views/addGuestView.vue'),
       // route level code-splitting
       // this generates a separate chunk (login.[hash].js) for this route
@@ -71,7 +71,7 @@ let routess=[]
       id:7,
       path: '/fastaddguest',
       name: 'fastaddguest',
-      showname:'Hızlı Misafir Ekle ',
+      showname:'Hızlı Konuk Ekle ',
       component: () => import(/* webpackChunkName: "Setting" */ '../views/FastAddGuestView.vue'),
       // route level code-splitting
       // this generates a separate chunk (login.[hash].js) for this route
@@ -83,7 +83,7 @@ let routess=[]
       id:8,
       path: '/guests',
       name: 'guests',
-      showname:'Misafirler ',
+      showname:'Konuklar ',
       component: () => import(/* webpackChunkName: "Setting" */ '../views/GuestView.vue'),
       // route level code-splitting
       // this generates a separate chunk (login.[hash].js) for this route
@@ -95,7 +95,7 @@ let routess=[]
       id:9,
       path: '/guestdetail',
       name: 'guestdetail',
-      showname:'Misafirler ',
+      showname:'Konuklar ',
       component: () => import(/* webpackChunkName: "Setting" */ '../views/GuestDetail.vue'),
       // route level code-splitting
       // this generates a separate chunk (login.[hash].js) for this route

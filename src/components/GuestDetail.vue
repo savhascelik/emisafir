@@ -555,7 +555,7 @@ export default {
                         };
                 axios.get(this.$store.state.apiUrl+this.$store.state.guestinfo, config)
                 .then((response)=> {
-                $toast.success("  Misafir tanım verileri getirildi")
+                $toast.success("  Konuk tanım verileri getirildi")
                 this.rooms=response.data.data.rooms
                 this.genders=response.data.data.genders
                 this.cityes=response.data.data.cityes
@@ -610,7 +610,7 @@ export default {
     
                     }, config)
                     .then((response)=> {
-                    $toast.success(response.data.data.room_name + "  Misafir Başarılı Bir Şekilde Kaydedildi")
+                    $toast.success(response.data.data.room_name + "  Konuk Başarılı Bir Şekilde Kaydedildi")
     
                     })
                     .catch((error)=> {
@@ -649,7 +649,7 @@ export default {
                 this.input.bringing_institution_id=response.data.data.data[0]["bringing_institution_id"];
                 this.input.profile_photo=response.data.data.data[0]["profile_photo"];
 
-                    $toast.success( "  Misafir Bilgileri Getirildi")
+                    $toast.success( "  Konuk Bilgileri Getirildi")
     
                     })
                     .catch((error)=> {

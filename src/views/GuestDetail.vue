@@ -25,7 +25,7 @@ import phone from '@/components/phone.vue';
 
       <template #header>
           <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-              Misafir Bilgileri
+              Konuk Bilgileri
           </h2>
 
       </template>
@@ -65,7 +65,7 @@ export default {
   mounted() {
  /*   if(this.$store.state.loginState )
     {
-      $toast.success("Misafir Detay Bölümüne Hoş Geldiniz")
+      $toast.success("Konuk Detay Bölümüne Hoş Geldiniz")
       this.$route.query.guest_id
     }else
     {
